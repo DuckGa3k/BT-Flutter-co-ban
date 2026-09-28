@@ -112,16 +112,20 @@ class _InputControlsState extends State<InputControlsDemo> {
               ],
             ),
             // tham khảo Date Time Picker: https://api.flutter.dev/flutter/material/showDatePicker.html
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(fixedSize: const Size(9999,30)),
-              onPressed: () => {
-                showDatePicker(
-                  context: context,
-                  firstDate: DateTime(2000),
-                  lastDate: DateTime.now(),
-                ),
-              },
-              child: Text("Open Date Picker"),
+            // tham khảo Sized Box để kiểm soát kích thước Button: https://api.flutter.dev/flutter/widgets/SizedBox-class.html
+            SizedBox(
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => {
+                  showDatePicker(
+                    context: context,
+                    firstDate: DateTime(2000),
+                    lastDate: DateTime.now(),
+                  ),
+                },
+                child: Text("Open Date Picker"),
+              ),
             ),
           ],
         ),
