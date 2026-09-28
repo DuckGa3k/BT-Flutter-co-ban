@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/bai_tap/core_widgets.dart';
 import 'package:flutter_application_1/pages/test.dart';
 
 void main() {
-  runApp(const MyApp());
-  // runApp(const TestApp());
+  // runApp(const MyApp());
+  runApp(const CoreWidgets()); // chạy bài tập 1
 }
 
 // Widget là các khối để xây dựng UI. Trong Flutter, mọi thứ trên màn hình đều là Widget. Có 2 loại Widget:
